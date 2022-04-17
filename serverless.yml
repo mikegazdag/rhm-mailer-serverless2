@@ -1,0 +1,18 @@
+org: fendytendy
+app: rhm-mailer
+service: rhm-mailer-serverless2
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  region: ca-central-1
+
+functions:
+  api:
+    handler: src/api/index.handler
+    events:
+      - httpApi: "*"
+
+plugins:
+  - serverless-offline

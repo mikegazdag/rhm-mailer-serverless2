@@ -1,0 +1,21 @@
+{
+  "name": "rhm-mailer-serverless2",
+  "version": "0.0.1",
+  "description": "Serverless 2",
+  "author": "Mike Gazdag",
+  "license": "MIT",
+  "scripts": {
+    "dev": "sls offline start"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "oy-vey": "^0.11.2",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "serverless": "^3.14.0",
+    "serverless-http": "^3.0.1"
+  },
+  "devDependencies": {
+    "serverless-offline": "^8.7.0"
+  }
+}
