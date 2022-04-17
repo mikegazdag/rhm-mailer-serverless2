@@ -5,7 +5,8 @@
   "author": "Mike Gazdag",
   "license": "MIT",
   "scripts": {
-    "dev": "sls offline start"
+    "dev": "sls offline start",
+    "start": "nodemon -e js  --exec \"sls offline\""
   },
   "dependencies": {
     "express": "^4.17.3",
@@ -16,6 +17,7 @@
     "serverless-http": "^3.0.1"
   },
   "devDependencies": {
+    "nodemon": "^2.0.15",
     "serverless-offline": "^8.7.0"
   }
 }
